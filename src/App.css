@@ -1,0 +1,397 @@
+@font-face {
+  font-family: "Mazzard.new";
+  src: local('Mazzard.new'), url(../../../../Documents/Web\ Stuffs/First_Website/fonts/mazzard-web-font/MazzardM-Light.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: rgb(223, 219, 219);
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mazzard.new";
+}
+/* ===========STYLING FOR APP.JS- HEADER===============*/
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header_spacing {
+  width: 80%;
+  background-color: white;
+}
+
+.head {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primary);
+  font-size: 1.3rem;
+}
+
+/* ===========STYLING FOR INDEX PAGE===============*/
+.main-nav {
+  width: 100%;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}
+
+.nav {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav_phone_no {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav_size {
+  text-align: center;
+}
+
+.link {
+  position: relative;
+  color: black;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.8rem;
+  top: -7px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 820px) {
+  .nav_phone_no {
+    display: none;
+  }
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.img_container {
+  width: 80%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  width: 15rem;
+  position: relative;
+  background-color: var(--primary);
+  height: 21rem;
+  margin-bottom: 2rem;
+}
+
+.img-card {
+  width: 100%;
+  height: 70%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.price {
+  font-size: 0.6rem;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.6rem 0;
+}
+
+.price h2 {
+  border-bottom: 2px solid rgb(234, 191, 0);
+  display: inline;
+}
+
+.h2 {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 18.3rem;
+  padding: 0.7rem 0 0.9rem;
+  background-color: black;
+  color: #ddd;
+  transition: all 400ms ease;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.btn:hover {
+  background-color: rgb(234, 191, 0);
+  color: rgb(91, 90, 94);
+}
+
+.size {
+  border: none;
+  margin: 0 0.9rem;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.3rem;
+  padding: 0 0.2rem;
+}
+
+.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+/* -----------STYLING FOR CART PAGE------------- */
+
+.home_link {
+  left: 0;
+  top: 0.4rem;
+  color: black;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart-body {
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1rem auto;
+  align-items: center;
+  width: 80%;
+}
+
+.home_link {
+  position: absolute;
+  left: 0.1rem;
+}
+
+.cart_section {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.it-card {
+  width: 70%;
+  height: 8rem;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: rgb(27, 26, 32);
+  display: flex;
+}
+
+.it-image {
+  width: 25%;
+  height: 100%;
+  margin-right: 1rem;
+  background-color: var(--primary);
+}
+
+.it-details {
+  width: 75%;
+  height: 100%;
+}
+
+.title,
+.main-qty,
+.qty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h6 {
+  cursor: pointer;
+  color: white;
+}
+
+.main-qty {
+  margin: 1rem 0;
+}
+
+.small-btn {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.amount {
+  margin: 0 0.3rem;
+  padding: 0 0.3rem;
+  background-color: black;
+  color: white;
+}
+
+.total {
+  text-align: center;
+}
+
+.yellow {
+  color: rgb(234, 191, 0);
+}
+
+.grey {
+  color: rgb(91, 90, 94);
+}
+
+.white {
+  color: white;
+}
+
+.emptyCart-Trash {
+  display: flex;
+  justify-content: center;
+  margin: 0.6rem 0;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.checkout h2 {
+  padding-left: 0.5rem;
+}
+
+.cart-sec {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart-arrow {
+  color: black;
+  font-size: 18rem;
+  height: 17rem;
+  width: 100%;
+  position: relative;
+}
+
+.arrow-down {
+  position: absolute;
+  animation: flip 5s  infinite ;
+}
+
+@keyframes flip {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotateY(0deg) ;
+  }
+ 50%{
+  left: 80%;
+  margin-left: -5.5rem;
+  transform: rotateY(-180deg) ;
+ }
+
+  100% {
+    left: 0;
+    top: 0;
+    transform: rotateY(0deg);
+  }
+}
+
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cart-empty h4 {
+  margin: 1rem 0;
+}
+
+.home_link2 {
+  text-decoration: none;
+}
+
+.cart-empty .checkout h2 {
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .cart-arrow {
+    display: flex;
+    justify-content: center; 
+  }
+  .arrow-down {
+    animation: flip 5s  infinite linear ;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg) ;
+    }
+    100%{
+      transform: rotateY(359deg);
+    }
+  }
+}
+/* ===========STYLING FOR APP.JS-FOOTER ===============*/
+.footer {
+  display: flex;
+  justify-content: center;
+}
