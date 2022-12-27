@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mazzard.new";
-  src: local('Mazzard.new'), url(../../../../Documents/Web\ Stuffs/First_Website/fonts/mazzard-web-font/MazzardM-Light.woff2);
+  src: local('Mazzard.new'), url(/fonts/mazzard-web-font/MazzardM-Light.woff2);
   font-style: normal;
   font-display: swap;
 }
