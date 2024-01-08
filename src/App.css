@@ -312,6 +312,11 @@ img {
   cursor: pointer;
   margin-bottom: 1rem;
 }
+.checkout:hover{
+  background-color: rgb(234, 191, 0);
+  color: rgb(91, 90, 94);
+  border: none;
+}
 
 .checkout h2 {
   padding-left: 0.5rem;
